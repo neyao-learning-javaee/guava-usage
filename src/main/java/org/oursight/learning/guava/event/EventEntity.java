@@ -9,7 +9,14 @@ public class EventEntity {
 
     public EventEntity(int m) {
         this.message = m;
+
+        Thread t = Thread.currentThread();
+        String name = t.getName();
+        System.out.println("name=" + name);
         System.out.println("message created:" + message);
+        System.out.println();
+        System.out.println();
+        System.out.println();
     }
 
     public int getMessage() {
